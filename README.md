@@ -86,8 +86,6 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 end
 ```
 
----
-
 ### lb-setup.sh
 
 ```bash
@@ -155,7 +153,17 @@ vagrant halt web3
 vagrant up web4
 ```
 
-Scaling ensures the application can handle different traffic loads efficiently.
+---
+
+## Screenshots
+
+The following screenshots are included in the `screenshots/` folder:
+
+- `vagrant-status.png` : Showing the status of all VMs.
+- `curl-200ok.png` : Showing HTTP 200 OK response from Load Balancer.
+- `frontend-build.png` : Showing the successful build of the React app.
+- `nginx-status.png` : Showing Nginx service running on the Load Balancer.
+- `load-balancer-test.png` : Showing successful load balancing even after shutting down web2.
 
 ---
 
@@ -178,6 +186,7 @@ vagrant halt
 ---
 
 ## Done
+
 
 
 
